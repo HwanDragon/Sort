@@ -13,9 +13,9 @@ void BubbleSort::sort(int* array, int size, bool showOption)
 	// 시간복잡도 n^2의 정렬
 	// 버블정렬은 i = 0 부터 두개씩 비교하여 왼쪽 값이 더 크면 바꾸고
 	// 오른쪽 값이 더 크면 바꾸지 않음
-	for (int i = 0; i < size; i++)
+	for (int i = size - 1; i >= 0; i--)
 	{
-		for (int j = 0; j < size - i - 1; j++)
+		for (int j = 0; j < i; j++)
 		{
 			if (array[j] > array[j + 1])
 			{
